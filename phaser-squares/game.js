@@ -84,6 +84,7 @@ function update() {
 		let h = Math.random();
 		let w = Math.random();
 		let newFood = food.create(width*w, height*h, 'food');
+		newFood.anchor.set(0.5);
 		// newFood.enableBody = true;
 	}
 		

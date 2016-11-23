@@ -78,11 +78,12 @@ function update() {
 	else {
 		player.body.velocity.x = 0;
 	}
-	// let makeFood = Math.random()*100
-	// 	if(makeFood>99){
-
-	// 		//food.add()
-	// }
+	let makeFood = Math.random()*100;
+	if(makeFood>99){
+		let h = Math.random();
+		let w = Math.random();
+		let newFood = food.create(width*w, height*h, 'food');
+	}
 		
 	//game.physics.enable(food, Phaser.Physics.ARCADE);
 	

@@ -51,6 +51,7 @@ function create() {
 	}
 	//enable physics for the food
 	game.physics.enable(food, Phaser.Physics.ARCADE);
+	food.enableBody = true;
 
 	//place score text on the screen
 	scoreText = game.add.text(5, 3, score);
@@ -83,6 +84,7 @@ function update() {
 		let h = Math.random();
 		let w = Math.random();
 		let newFood = food.create(width*w, height*h, 'food');
+		// newFood.enableBody = true;
 	}
 		
 	//game.physics.enable(food, Phaser.Physics.ARCADE);
